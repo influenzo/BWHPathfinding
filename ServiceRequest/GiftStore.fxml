@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.ServiceRequest.GiftStoreController">
+  <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="520.0" prefWidth="1129.0">
+               <children>
+                  <HBox prefHeight="495.0" prefWidth="1174.0" spacing="75.0" styleClass="background-card">
+                     <children>
+                        <fx:include fx:id="basicInformation" source="BasicInformation.fxml" />
+                        <VBox alignment="CENTER_LEFT" minWidth="250.0" prefHeight="450.0" prefWidth="250.0" styleClass="vbox-information-panel">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="Store Items" wrappingWidth="268.52660369873047">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin></Text>
+                              <JFXListView fx:id="itemsList" onMouseClicked="#listClicked" prefHeight="400.0" prefWidth="250.0" styleClass="jfx-list-cell">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXListView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" minWidth="450.0" prefHeight="450.0" prefWidth="450.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="296.0">
+                                 <children>
+                                    <Label styleClass="text-header" text="Your Cart">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <JFXListView fx:id="checkoutList" editable="true" onMouseClicked="#listClicked" prefHeight="291.0" prefWidth="240.0" styleClass="list-cell" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="500.0" spacing="10.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="errorMessage" prefHeight="36.0" prefWidth="338.0" styleClass="red-bold-text" text="Please fill out all fields" visible="false" wrapText="true">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Segoe UI" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="subTotal" contentDisplay="CENTER" prefHeight="76.0" prefWidth="252.0" styleClass="body">
+                                             <font>
+                                                <Font name="Segoe UI Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="300.0" spacing="25.0">
+                                       <children>
+                                       <JFXButton fx:id="clearBtn" alignment="CENTER" buttonType="RAISED" onAction="#btnClicked" prefHeight="30.0" prefWidth="182.0" text="Clear">
+                                          <font>
+                                             <Font name="Segoe UI" size="15.0" />
+                                          </font>
+                                          <styleClass>
+                                             <String fx:value="basic-button" />
+                                             <String fx:value="white-background-blueT" />
+                                          </styleClass>
+                                       </JFXButton>
+                                       <JFXButton fx:id="btnSubmit" buttonType="RAISED" onAction="#btnClicked" prefHeight="30.0" prefWidth="204.0" text="Checkout">
+                                          <styleClass>
+                                             <String fx:value="basic-button" />
+                                             <String fx:value="blue-background-whiteT" />
+                                          </styleClass>
+                                       </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="vbox-information-panel" />
+                           </styleClass>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#949494" height="20.0" radius="9.5" width="20.0" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+<HBox alignment="CENTER" prefHeight="135.0" prefWidth="1280.0" style="-fx-background-radius: 15;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+  <children>
+            <Text styleClass="text-title" text="Candy Store" />
+  </children>
+  <padding>
+    <Insets />
+  </padding>
+</HBox>
+     <fx:include fx:id="requestReceivedPopup" source="RequestReceivedPopup.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <fx:include source="../BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" onAction="#btnClicked" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <styleClass>
+            <String fx:value="blue-background-whiteT" />
+            <String fx:value="small-icon-button" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0">
+               <image>
+                  <Image url="@../images/icons/back_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" layoutX="32.0" layoutY="20.0" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+  </children>
+<!--   <stylesheets>-->
+<!--      <URL value="@../light-mode/basicStructure.css" />-->
+<!--      <URL value="@../light-mode/service-request.css" />-->
+<!--      <URL value="@../pNopia/pNopia.css" />-->
+<!--   </stylesheets>-->
+</AnchorPane>

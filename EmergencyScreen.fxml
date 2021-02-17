@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.EmergencyScreenController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="73.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="homeBtn" buttonType="RAISED" onAction="#btnClicked" text="Home">
+                     <styleClass>
+                        <String fx:value="small-icon-button" />
+                        <String fx:value="blue-background-whiteT" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/icons/home_white_light.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="89.0" prefHeight="165.0" prefWidth="1232.0" styleClass="blue-title" text="What is the emergency?" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="23.0">
+               <font>
+                  <Font name="Segoe UI" size="96.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="darkModeIcons" alignment="CENTER" layoutX="128.0" layoutY="226.0" prefHeight="402.0" prefWidth="988.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="164.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="515.6000122070312" minWidth="10.0" prefWidth="424.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="366.60003662109375" minWidth="10.0" prefWidth="143.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="518.5332641601561" minWidth="10.0" prefWidth="422.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="220.7999755859375" minHeight="10.0" prefHeight="196.266650390625" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" layoutX="792.0" layoutY="268.0" prefHeight="220.0" prefWidth="117.0" styleClass="subheader" text="or" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="72.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="TOP_CENTER" prefHeight="388.0" prefWidth="250.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="exit1" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnClicked" styleClass="button-transparent" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" onMouseClicked="#btnClicked">
+                                 <image>
+                                    <Image url="@images/icons/darkMode/emergencyExit_yellow.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label alignment="CENTER" prefHeight="76.0" prefWidth="422.0" styleClass="subheader" text="Emergency Path " textAlignment="CENTER"  wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="338.0" prefWidth="473.0" spacing="10.0" GridPane.columnIndex="2">
+                     <children>
+                        <JFXButton fx:id="notify1" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnClicked" styleClass="button-transparent" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" onMouseClicked="#btnClicked">
+                                 <image>
+                                    <Image url="@images/icons/darkMode/emergencyNotification_yellow.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label alignment="CENTER" prefHeight="99.0" prefWidth="418.0" styleClass="subheader" text="Notify of Emergency" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <GridPane fx:id="lightModeIcons" alignment="CENTER" layoutX="128.0" layoutY="226.0" prefHeight="402.0" prefWidth="988.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="164.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="515.6000122070312" minWidth="10.0" prefWidth="424.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="366.60003662109375" minWidth="10.0" prefWidth="143.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="518.5332641601561" minWidth="10.0" prefWidth="422.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="220.7999755859375" minHeight="10.0" prefHeight="196.266650390625" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" layoutX="792.0" layoutY="268.0" prefHeight="220.0" prefWidth="117.0" styleClass="subheader" text="or" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="72.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="TOP_CENTER" prefHeight="388.0" prefWidth="250.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="exit" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnClicked" styleClass="button-transparent" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" onMouseClicked="#btnClicked">
+                                 <image>
+                                    <Image url="@images/icons/emergencyExit_blue_light.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label alignment="CENTER" prefHeight="76.0" prefWidth="422.0" styleClass="subheader" text="Emergency Path " textAlignment="CENTER"  wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="338.0" prefWidth="473.0" spacing="10.0" GridPane.columnIndex="2">
+                     <children>
+                        <JFXButton fx:id="notify" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnClicked" styleClass="button-transparent" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" onMouseClicked="#btnClicked">
+                                 <image>
+                                    <Image url="@images/icons/emergencyNotification_blue_light.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label alignment="CENTER" prefHeight="99.0" prefWidth="418.0" styleClass="subheader" text="Notify of Emergency" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+         <styleClass>
+            <String fx:value="root" />
+            <String fx:value="root-background" />
+         </styleClass>
+      </AnchorPane>
+      <fx:include source="BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <StackPane fx:id="notificationReceived" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000080" height="2000.0" stroke="BLACK" strokeType="INSIDE" width="2000.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="350.0" minHeight="350.0" prefHeight="350.0" prefWidth="345.0" styleClass="background-pop-up">
+                     <children>
+                        <ImageView fitHeight="107.0" fitWidth="143.0" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons/onOurWay_black_light.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="128.0" prefWidth="373.0" styleClass="text-notification" text="We have received your message, help is on the way." textAlignment="CENTER" wrapText="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="150.0" left="300.0" right="300.0" top="50.0" />
+               </padding>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+   <!--   <stylesheets>-->
+   <!--      <URL value="@pNopia/pNopia.css" />-->
+   <!--      <URL value="@light-mode/basicStructure.css" />-->
+   <!--   </stylesheets>-->
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="root-background" />
+   </styleClass>
+</AnchorPane>

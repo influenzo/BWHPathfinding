@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.ServiceRequest.AVController">
+    <children>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" layoutX="42.0" layoutY="30.0" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vbox-information-panel" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="520.0" prefWidth="1129.0">
+                    <children>
+                        <HBox prefHeight="495.0" prefWidth="1174.0" spacing="75.0" styleClass="background-card">
+                            <children>
+                                <fx:include fx:id="basicInformation" source="BasicInformation.fxml" />
+                                <VBox prefHeight="474.0" prefWidth="338.0" spacing="15.0" styleClass="vbox-information-panel">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="Necessary Equipment">
+                                        </Text>
+                                        <JFXCheckBox fx:id="boxMic" styleClass="jfx-check-box" text="Microphone" />
+                                        <JFXCheckBox fx:id="boxSpeaker" styleClass="jfx-check-box" text="Speaker" />
+                                        <JFXCheckBox fx:id="boxCamera" styleClass="jfx-check-box" text="Camera" />
+                                        <JFXCheckBox fx:id="boxLight" styleClass="jfx-check-box" text="Light Box" />
+                                      <JFXCheckBox fx:id="boxMixer" styleClass="jfx-check-box" text="Audio Mixer" />
+                                        <JFXCheckBox fx:id="boxMicStand" styleClass="jfx-check-box" text="Microphone Stand" />
+                                        <JFXCheckBox fx:id="boxSpeakerStand" styleClass="jfx-check-box" text="Speaker Stand" />
+                              <JFXCheckBox fx:id="boxCameraStand" text="Camera Stand" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="BOTTOM_CENTER" prefHeight="410.0" prefWidth="259.0">
+                                    <children>
+                              <Label fx:id="selectMessage" alignment="CENTER" prefHeight="64.0" prefWidth="225.0" styleClass="red-bold-text" text="Check an equipment type" textAlignment="CENTER" visible="false" wrapText="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="17.0" />
+                                 </font>
+                              </Label>
+                                        <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="218.0" styleClass="red-bold-text" text="Please fill out all fields" textAlignment="CENTER" visible="false" wrapText="true">
+                                            <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Segoe UI" size="17.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXButton fx:id="btnSubmit" buttonType="RAISED" onAction="#btnClicked" prefHeight="49.0" prefWidth="147.0" text="Submit">
+                                            <VBox.margin>
+                                                <Insets right="10.0" />
+                                            </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="basic-button" />
+                                    <String fx:value="blue-background-whiteT" />
+                                 </styleClass></JFXButton>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="20.0" />
+                                    </padding>
+                                    <HBox.margin>
+                                        <Insets left="-50.0" right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" color="#949494" height="20.0" radius="9.5" width="20.0" />
+                            </effect>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="135.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title" text="Audio Visual Services">
+                    <fill>
+                        <Color blue="0.353" green="0.176" red="0.004" fx:id="x4" />
+                    </fill>
+                    <font>
+                        <Font name="Segoe UI" size="12.0" fx:id="x3" />
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets />
+            </padding>
+        </HBox>
+        <fx:include fx:id="requestReceivedPopup" source="RequestReceivedPopup.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <fx:include source="../BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <JFXButton fx:id="btnCancel" buttonType="RAISED" onAction="#btnClicked" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <styleClass>
+            <String fx:value="small-icon-button" />
+            <String fx:value="blue-background-whiteT" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0">
+               <image>
+                  <Image url="@../images/icons/back_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+    </children>
+<!--   <stylesheets>-->
+<!--      <URL value="@../light-mode/service-request.css" />-->
+<!--      <URL value="@../light-mode/basicStructure.css" />-->
+<!--      <URL value="@../pNopia/pNopia.css" />-->
+<!--   </stylesheets>-->
+</AnchorPane>

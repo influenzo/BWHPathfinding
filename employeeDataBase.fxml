@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.EmployeeDatabaseController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="603.0" prefWidth="1280.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <styleClass>
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-view" />
+         </styleClass></TableView>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="70.0" prefWidth="515.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="saveBtn" buttonType="RAISED" onAction="#btnClicked" text="Save">
+               <styleClass>
+                  <String fx:value="basic-button" />
+                  <String fx:value="blue-background-whiteT" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="createBtn" buttonType="RAISED" onAction="#btnClicked" text="Add">
+               <styleClass>
+                  <String fx:value="basic-button" />
+                  <String fx:value="blue-background-whiteT" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="csvBtn" buttonType="RAISED" onAction="#btnClicked" text="Download CSV">
+               <styleClass>
+                  <String fx:value="basic-button" />
+                  <String fx:value="blue-background-whiteT" />
+               </styleClass></JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="shadowBox" opacity="0.5" prefHeight="100.0" prefWidth="200.0" styleClass="root-background" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox fx:id="employeePopUp" alignment="CENTER" layoutY="-1.0" prefHeight="671.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="585.0" prefWidth="474.0" spacing="30.0" styleClass="background-card">
+                     <children>
+                        <Label styleClass="subheader" text="Add Employee" />
+                        <JFXTextField fx:id="nameInput" labelFloat="true" promptText="Full Name" styleClass="jfx-text-field">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <HBox prefHeight="36.0" prefWidth="420.0" spacing="30.0">
+                           <children>
+                              <JFXTextField fx:id="employeeID" labelFloat="true" promptText="Employee ID" styleClass="jfx-text-field">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXCheckBox fx:id="isAdmin" styleClass="jfx-check-box" prefHeight="29.0" prefWidth="200.0" text="Is Employee an Admin?" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="36.0" prefWidth="420.0" spacing="30.0">
+                           <children>
+                              <JFXTextField fx:id="userName" labelFloat="true" prefHeight="25.0" prefWidth="194.0" promptText="Username" styleClass="jfx-text-field"/>
+                              <JFXPasswordField fx:id="passWord" labelFloat="true" prefHeight="29.0" prefWidth="194.0" promptText="Password" styleClass="jfx-text-field"/>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="13.0" prefWidth="420.0" spacing="20.0">
+                           <children>
+                              <JFXComboBox fx:id="serviceBox" labelFloat="true" prefHeight="25.0" prefWidth="200.0" promptText="Service" />
+                              <JFXComboBox fx:id="languageBox" labelFloat="true" prefHeight="25.0" prefWidth="200.0" promptText="Langauges" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label styleClass="body" text="Availability:" />
+                        <VBox prefHeight="81.0" prefWidth="473.0" spacing="20.0">
+                           <children>
+                              <HBox prefHeight="31.0" prefWidth="480.0" spacing="30.0">
+                                 <children>
+                                    <JFXCheckBox fx:id="mondayCheck" styleClass="jfx-check-box" text="Monday" />
+                                    <JFXCheckBox fx:id="tusCheck" styleClass="jfx-check-box" text="Tuesday" />
+                                    <JFXCheckBox fx:id="wedCheck" styleClass="jfx-check-box" text="Wednesday " />
+                                    <JFXCheckBox fx:id="thurCheck" styleClass="jfx-check-box" text="Thursday" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="55.0" prefWidth="480.0" spacing="30.0">
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                                 <children>
+                                    <JFXCheckBox fx:id="friCheck" styleClass="jfx-check-box" text="Friday" />
+                                    <JFXCheckBox fx:id="satCheck" styleClass="jfx-check-box" text="Saturday" />
+                                    <JFXCheckBox fx:id="sunCheck" styleClass="jfx-check-box" text="Sunday" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="13.0" prefWidth="420.0" spacing="20.0">
+                                 <children>
+                                    <JFXComboBox fx:id="timeIn" labelFloat="true" prefHeight="25.0" prefWidth="200.0" promptText="Time In" />
+                                    <JFXComboBox fx:id="timeOut" labelFloat="true" prefWidth="200.0" promptText="Time Out" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="30.0" right="30.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="473.0">
+                           <children>
+                              <JFXButton fx:id="cancelBtn" buttonType="RAISED" onAction="#btnClicked" prefHeight="49.0" prefWidth="145.0" text="Cancel">
+                                 <styleClass>
+                                    <String fx:value="basic-button" />
+                                    <String fx:value="white-background-blueT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Label fx:id="finishLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="193.0" text="Complete Form" textFill="RED">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="addBtn" buttonType="RAISED" onAction="#btnClicked" prefHeight="49.0" prefWidth="117.0" text="Add">
+                                 <styleClass>
+                                    <String fx:value="basic-button" />
+                                    <String fx:value="blue-background-whiteT" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <!--   <stylesheets>-->
+   <!--      <URL value="@light-mode/light-mode.css" />-->
+   <!--      <URL value="@light-mode/basicStructure.css" />-->
+   <!--      <URL value="@light-mode/tableView.css" />-->
+   <!--   </stylesheets>-->
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="root-background" />
+   </styleClass>
+</AnchorPane>

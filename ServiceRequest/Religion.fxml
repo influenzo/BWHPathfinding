@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.ServiceRequest.ReligionController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+            <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="520.0" prefWidth="1129.0">
+                     <children>
+                        <HBox fx:id="light" prefHeight="495.0" prefWidth="1174.0" spacing="75.0" styleClass="background-card">
+                           <children>
+                              <fx:include fx:id="basicInformation" source="BasicInformation.fxml" />
+                              <VBox prefHeight="482.0" prefWidth="370.0" spacing="15.0" styleClass="vbox-information-panel">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="Religion ">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="30.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="346.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0">
+                                             <image>
+                                                <Image url="@../images/static/religion/christianity.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="christianityBtn" alignment="BASELINE_LEFT" onAction="#btnClicked" prefHeight="124.0" prefWidth="182.0" text="Christianity" styleClass="body">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="transparent-highlight-button" />
+                                                <String fx:value="text-option" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="346.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0">
+                                             <image>
+                                                <Image url="@../images/static/religion/bahai.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="bahaiBtn" alignment="BASELINE_LEFT" onAction="#btnClicked" prefHeight="124.0" prefWidth="182.0" text="Bahai" styleClass="body">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="transparent-highlight-button" />
+                                                <String fx:value="text-option" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="346.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0">
+                                             <image>
+                                                <Image url="@../images/static/religion/buddhism.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="buddhismBtn" alignment="BASELINE_LEFT" onAction="#btnClicked" prefHeight="124.0" prefWidth="182.0" text="Buddhism" styleClass="body">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="transparent-highlight-button" />
+                                                <String fx:value="text-option" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="346.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0">
+                                             <image>
+                                                <Image url="@../images/static/religion/hindu.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="hinduismBtn" alignment="BASELINE_LEFT" onAction="#btnClicked" prefHeight="124.0" prefWidth="182.0" text="Hinduism" styleClass="body">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="transparent-highlight-button" />
+                                                <String fx:value="text-option" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="346.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0">
+                                             <image>
+                                                <Image url="@../images/static/religion/islamic.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="islamBtn" alignment="BASELINE_LEFT" onAction="#btnClicked" prefHeight="124.0" prefWidth="182.0" text="Islam" styleClass="body">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="transparent-highlight-button" />
+                                                <String fx:value="text-option" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="346.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0">
+                                             <image>
+                                                <Image url="@../images/static/religion/judaism.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="judaismBtn" alignment="BASELINE_LEFT" onAction="#btnClicked" prefHeight="124.0" prefWidth="182.0" text="Judaism" styleClass="body">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="transparent-highlight-button" />
+                                                <String fx:value="text-option" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="475.0" prefWidth="236.0">
+                                 <children>
+                                    <Label fx:id="errorMessage" alignment="CENTER" prefHeight="0.0" prefWidth="236.0" styleClass="red-bold-text" text="Please fill out all fields" textAlignment="CENTER" visible="false" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Segoe UI" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="btnSubmit" buttonType="RAISED" onAction="#btnClicked" prefHeight="49.0" prefWidth="147.0" text="Submit">
+                                       <VBox.margin>
+                                          <Insets right="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="basic-button" />
+                                          <String fx:value="blue-background-whiteT" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="-50.0" right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" color="#949494" height="20.0" radius="9.5" width="20.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="135.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                  <Text styleClass="text-title" text="Religious Support" />
+            </children>
+            <padding>
+                <Insets />
+            </padding>
+        </HBox>
+        <fx:include fx:id="requestReceivedPopup" source="RequestReceivedPopup.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <fx:include source="../BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <JFXButton fx:id="btnCancel" buttonType="RAISED" onAction="#btnClicked" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <styleClass>
+            <String fx:value="small-icon-button" />
+            <String fx:value="blue-background-whiteT" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0">
+               <image>
+                  <Image url="@../images/icons/back_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" layoutX="32.0" layoutY="20.0" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+    </children>
+<!--   <stylesheets>-->
+<!--      <URL value="@../light-mode/basicStructure.css" />-->
+<!--      <URL value="@../pNopia/pNopia.css" />-->
+<!--      <URL value="@../light-mode/service-request.css" />-->
+<!--   </stylesheets>-->
+</AnchorPane>

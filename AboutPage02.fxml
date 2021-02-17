@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.AboutPage2Controller">
+    <children>
+      <AnchorPane fx:id="wifiPanel" prefHeight="629.0" prefWidth="1280.0" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="dmbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/backgroundDarkMode.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="abackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/achromatopsiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/deuteranopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/protanopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/tritanopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="backImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" styleClass="background-image" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <effect>
+                  <GaussianBlur radius="0.0" />
+               </effect>
+               <image>
+                  <Image url="@images/static/NewWelcomeBackground.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="400.0" scaleX="1.25" scaleY="1.25" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/static/WPI_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="WPI Computer Science Department" textAlignment="CENTER" wrappingWidth="368.13671875" />
+                  <HBox alignment="CENTER" prefHeight="190.0" prefWidth="510.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="209.0" prefWidth="244.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/wwong.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-form-text-field" text="Prof. Wilson Wong" textAlignment="CENTER" wrappingWidth="243.13671875" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Michael_03.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-form-text-field" text="Team Coach: Michael Clements" textAlignment="CENTER" wrappingWidth="243.13671875" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="The Brigham &amp; Women’s Hospital maps and data used in this application are copyrighted and provided for the sole use of educational purposes. &#10;&#10;We would like to thank Brigham and Women’s Hospital and their representative, Andrew Shinn, for their time and input." textAlignment="CENTER" wrappingWidth="509.13671875" />
+               </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="282.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Brittany.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Brittany Henriques, &#10;UI/UX Specialist" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Nathan.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Nathan Klingensmith,  &#10;Lead Software Engineer" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Alejandra.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Alejandra Garza,&#10; UI/UX Specialist" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="154.0" prefWidth="226.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="142.0" prefWidth="255.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Evan.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Evan Hatton, &#10;Database Assistant/Scrum Master" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Andrew_02.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Andrew Shanaj, &#10;Project Manager" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Meha.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Meha Mohapatra, &#10;Product Owner" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/Lorenzo.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Lorenzo DeSimone,  &#10;Assistant Lead Software Engineer" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/River.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="River Yan, &#10;Assistant Lead Software Engineer" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/static/profile_pics/wonjae.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-text-field" text="Wonjae Jang, &#10;Documentation Analyst/QA" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="200.0" />
+         </padding>
+      </HBox>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" onAction="#btnClicked" prefWidth="99.0" styleClass="medium-icon-button" text="Back" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="40.0">
+         <graphic>
+            <ImageView fx:id="backImg1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="background-image">
+               <effect>
+                  <GaussianBlur radius="0.0" />
+               </effect>
+               <image>
+                  <Image url="@images/icons/back_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" layoutX="22.0" layoutY="10.0" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="credits" buttonType="RAISED" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#btnClicked" prefHeight="66.0" prefWidth="183.0" styleClass="transparent-button-white-text" text="Credits" textFill="#012d5a" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </JFXButton>
+    </children>
+<!--   <stylesheets>-->
+<!--      <URL value="@light-mode/basicStructure.css" />-->
+<!--      <URL value="@pNopia/pNopia.css" />-->
+<!--   </stylesheets>-->
+
+</AnchorPane>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.CreditsController">
+    <children>
+      <AnchorPane fx:id="wifiPanel" prefHeight="629.0" prefWidth="1280.0" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="abackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/achromatopsiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/deuteranopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/protanopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/tritanopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="backImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" styleClass="background-image" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <effect>
+                  <GaussianBlur radius="0.0" />
+               </effect>
+               <image>
+                  <Image url="@images/static/NewWelcomeBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dmbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/backgroundDarkMode.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="572.0" prefWidth="750.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="68.0" prefWidth="750.0">
+                     <children>
+                        <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="CS 3733 APIs" textAlignment="CENTER" wrappingWidth="250.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXButton fx:id="btnAudioVisualAPI" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/baseline_volume_up_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Audio Visual&#10;Team M" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXButton fx:id="btnFood" buttonType="RAISED" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/food_icon_4.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Food Ordering&#10;Team P" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXButton fx:id="btnGiftDeliveryAPI" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/gift-icon-blue.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Gift Delivery&#10;Team L" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="154.0" prefWidth="226.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="142.0" prefWidth="255.0">
+                           <children>
+                              <JFXButton fx:id="btnTransportationAPI" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/wheelchair_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Internal Transportation&#10;Team D" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXButton fx:id="btnInterpreterAPI" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/baseline_translate_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Interpreter&#10;Team C" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXButton fx:id="btnIncidentAPI" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/security-icon-blue.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Secure Incident Report&#10;Team B" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="66.0" prefWidth="750.0">
+                     <children>
+                        <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="External APIs" textAlignment="CENTER" wrappingWidth="250.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXButton fx:id="btnAudioVisualAPI1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/locationWifi_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jfx-search-text-field" text="Google Maps API" textAlignment="CENTER" wrappingWidth="250.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets top="-100.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="200.0" />
+         </padding>
+      </HBox>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" onAction="#btnClicked" prefWidth="99.0" styleClass="medium-icon-button" text="Back" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="40.0">
+         <graphic>
+            <ImageView fx:id="backImg1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="background-image">
+               <effect>
+                  <GaussianBlur radius="0.0" />
+               </effect>
+               <image>
+                  <Image url="@images/icons/back_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" layoutX="22.0" layoutY="10.0" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+    </children>
+<!--   <stylesheets>-->
+<!--      <URL value="@light-mode/basicStructure.css" />-->
+<!--      <URL value="@pNopia/pNopia.css" />-->
+<!--   </stylesheets>-->
+
+</AnchorPane>

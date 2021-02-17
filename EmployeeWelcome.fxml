@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F0F0F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.AdminWelcomeController">
+    <children>
+        <AnchorPane styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="595.0" prefWidth="1280.0" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="welcome1" layoutX="10.0" layoutY="193.0" prefHeight="279.0" prefWidth="1120.0" styleClass="white-title" textFill="WHITE">
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </VBox>
+            <ImageView fx:id="dmbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/backgroundDarkMode.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="abackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/achromatopsiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/deuteranopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/protanopiaBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tbackImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+               <image>
+                  <Image url="@images/static/backgrounds/tritanopiaBackground.png" />
+               </image>
+            </ImageView>
+                <ImageView fx:id="backImg" fitHeight="720.0" fitWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-25.0">
+                    <image>
+                        <Image url="@images/static/NewWelcomeBackground.png" />
+                    </image>
+                </ImageView>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="300.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <JFXButton fx:id="navigation" buttonType="RAISED" focusTraversable="false" onAction="#btnClicked" prefHeight="66.0" prefWidth="300.0" styleClass="transparent-button-white-text" text="Navigation" textFill="#012d5a">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <JFXButton fx:id="service" buttonType="RAISED" focusTraversable="false" onAction="#btnClicked" prefHeight="49.0" prefWidth="145.0" styleClass="transparent-button-white-text" text="Services" textFill="#012d5a">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="48.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="btnLocal" buttonType="RAISED" onAction="#btnClicked" prefHeight="45.0" prefWidth="200.0" text="Local">
+                                 <styleClass>
+                                    <String fx:value="white-background-blackT" />
+                                    <String fx:value="basic-button" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btnAPI" buttonType="RAISED" onAction="#btnClicked" prefWidth="200.0" text="API">
+                                 <styleClass>
+                                    <String fx:value="white-background-blackT" />
+                                    <String fx:value="basic-button" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="-25.0" />
+                     </HBox.margin>
+                  </VBox>
+                     <JFXButton fx:id="logOut" buttonType="RAISED" focusTraversable="false" maxWidth="-Infinity" minWidth="-Infinity" onAction="#btnClicked" prefHeight="49.0" prefWidth="178.0" styleClass="transparent-button-white-text" text="Log Out" textOverrun="CLIP">
+                         <graphic>
+                             <ImageView fitHeight="30.0" fitWidth="30.0" rotate="180.0">
+                                 <image>
+                                     <Image url="@images/icons/emergencyExit_white_light.png" />
+                                 </image>
+                             </ImageView>
+                         </graphic>
+                     </JFXButton>
+               </children>
+            </HBox>
+            </children>
+        </AnchorPane>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+    </children>
+    <!--   <stylesheets>-->
+    <!--      <URL value="@pNopia/pNopia.css" />-->
+    <!--      <URL value="@light-mode/basicStructure.css" />-->
+    <!--   </stylesheets>-->
+</AnchorPane>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.AnalyticsController">
+    <children>
+      <JFXTabPane styleClass="jfx-tab-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+          <Tab text="Summary">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root-background">
+                     <children>
+                        <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" fillHeight="false" prefHeight="450.0" prefWidth="1280.0">
+                                 <children>
+                                    <BarChart fx:id="avSumChart" legendSide="RIGHT" legendVisible="false" prefHeight="450.0" prefWidth="1000.0" scaleX="0.75" scaleY="0.75" title="Audio Visual Analytics">
+                                       <xAxis>
+                                          <CategoryAxis prefHeight="37.0" prefWidth="884.0" scaleY="0.75" scaleZ="0.75">
+                                             <tickLabelFont>
+                                                <Font name="Segoe UI Bold" size="18.0" />
+                                             </tickLabelFont>
+                                          </CategoryAxis>
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Amount of Times Requested" prefHeight="81.0" prefWidth="66.0" side="LEFT" />
+                                       </yAxis>
+                                    </BarChart>
+                                    <BarChart fx:id="flowerSumChart" legendSide="RIGHT" legendVisible="false" prefHeight="450.0" prefWidth="1000.0" scaleX="0.75" scaleY="0.75" title="Flower Analytics">
+                                       <xAxis>
+                                          <CategoryAxis prefHeight="37.0" prefWidth="884.0" scaleY="0.75" scaleZ="0.75">
+                                             <tickLabelFont>
+                                                <Font name="Segoe UI Bold" size="18.0" />
+                                             </tickLabelFont>
+                                          </CategoryAxis>
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Amount of Times Requested" prefHeight="491.0" prefWidth="50.0" side="LEFT" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" fillHeight="false" prefHeight="450.0" prefWidth="1280.0">
+                                 <children>
+                                    <BarChart fx:id="itSumChart" legendSide="RIGHT" legendVisible="false" prefHeight="450.0" prefWidth="1000.0" scaleX="0.75" scaleY="0.75" title="Information Technology Services Analytics">
+                                       <xAxis>
+                                          <CategoryAxis prefHeight="37.0" prefWidth="884.0" scaleY="0.75" scaleZ="0.75">
+                                             <tickLabelFont>
+                                                <Font name="Segoe UI Bold" size="18.0" />
+                                             </tickLabelFont>
+                                          </CategoryAxis>
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Amount of Times Requested" prefHeight="81.0" prefWidth="62.0" side="LEFT" />
+                                       </yAxis>
+                                    </BarChart>
+                                    <BarChart fx:id="interpreterSumChart" legendSide="RIGHT" legendVisible="false" prefHeight="450.0" prefWidth="1000.0" scaleX="0.75" scaleY="0.75" title="Interpreter Analytics">
+                                       <xAxis>
+                                          <CategoryAxis prefHeight="37.0" prefWidth="884.0" scaleY="0.75" scaleZ="0.75">
+                                             <tickLabelFont>
+                                                <Font name="Segoe UI Bold" size="18.0" />
+                                             </tickLabelFont>
+                                          </CategoryAxis>
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Amount of Times Requested" prefHeight="81.0" prefWidth="59.0" side="LEFT" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Audio Visual">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                              <BarChart fx:id="avChart" legendSide="RIGHT" legendVisible="false" prefHeight="456.0" prefWidth="894.0" title="Audio Visual Analytics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                  <xAxis>
+                                      <CategoryAxis prefHeight="37.0" prefWidth="884.0">
+                                          <tickLabelFont>
+                                              <Font name="Segoe UI Bold" size="18.0" />
+                                          </tickLabelFont>
+                                      </CategoryAxis>
+                                  </xAxis>
+                                  <yAxis>
+                                      <NumberAxis label="Amount of Times Requested" prefHeight="442.0" prefWidth="69.0" side="LEFT" />
+                                  </yAxis>
+                              </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Flower Shop">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                              <BarChart fx:id="flowersChart" legendSide="RIGHT" legendVisible="false" prefHeight="670.0" prefWidth="958.0" title="Flower Analytics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                  <xAxis>
+                                      <CategoryAxis prefHeight="37.0" prefWidth="884.0">
+                                          <tickLabelFont>
+                                              <Font name="Segoe UI Bold" size="18.0" />
+                                          </tickLabelFont>
+                                      </CategoryAxis>
+                                  </xAxis>
+                                  <yAxis>
+                                      <NumberAxis label="Amount of Times Requested" prefHeight="491.0" prefWidth="73.0" side="LEFT" />
+                                  </yAxis>
+                              </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Information Technology">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                              <BarChart fx:id="itChart" legendSide="RIGHT" legendVisible="false" prefHeight="670.0" prefWidth="958.0" title="Information Technology Services Analytics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                  <xAxis>
+                                      <CategoryAxis prefHeight="37.0" prefWidth="884.0">
+                                          <tickLabelFont>
+                                              <Font name="Segoe UI Bold" size="18.0" />
+                                          </tickLabelFont>
+                                      </CategoryAxis>
+                                  </xAxis>
+                                  <yAxis>
+                                      <NumberAxis label="Amount of Times Requested" prefHeight="491.0" prefWidth="82.0" side="LEFT" />
+                                  </yAxis>
+                              </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Interpreter">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                              <BarChart fx:id="interpreterChart" legendSide="RIGHT" legendVisible="false" prefHeight="670.0" prefWidth="958.0" title="Interpreter Analytics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                  <xAxis>
+                                      <CategoryAxis prefHeight="37.0" prefWidth="884.0">
+                                          <tickLabelFont>
+                                              <Font name="Segoe UI Bold" size="18.0" />
+                                          </tickLabelFont>
+                                      </CategoryAxis>
+                                  </xAxis>
+                                  <yAxis>
+                                      <NumberAxis label="Amount of Times Requested" prefHeight="491.0" prefWidth="85.0" side="LEFT" />
+                                  </yAxis>
+                              </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+         </tabs>
+      </JFXTabPane>
+
+    </children>
+    <!--         <stylesheets>-->
+    <!--            <URL value="@pNopia/pNopia.css" />-->
+    <!--            <URL value="@light-mode/basicStructure.css" />-->
+    <!--            <URL value="@light-mode/tabPane.css" />-->
+    <!--         </stylesheets>-->
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="root-background" />
+   </styleClass>
+</AnchorPane>

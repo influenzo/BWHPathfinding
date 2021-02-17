@@ -1,0 +1,17 @@
+
+.jfx-tab-pane .header {
+    -fx-background-color: #03827E;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #03827E;
+}
+.jfx-tab-pane .tab-header-area .tab-selected-line {
+    -fx-background-color: #F37177;
+}
+.tab-label {
+    -fx-alignment: CENTER;
+    -fx-pref-height: 60;
+    -fx-pref-width: 250;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 20;
+}

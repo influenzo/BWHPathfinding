@@ -1,0 +1,218 @@
+.root-background{
+    -fx-background-color: #E3E3E3;
+}
+
+/*/// USUALLY BUTTONS///*/
+
+.blue-background-whiteT{
+    -fx-background-color: #1F2096;
+    -fx-text-fill: #FFFFFF;
+}
+
+.white-background-blueT {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #1F2096;
+}
+
+.red-background-whiteT {
+    -fx-background-color: #e53935;
+    -fx-text-fill: #ffffff;
+}
+
+.white-background-blackT{
+    -fx-background-color: #ffffff !important;
+    -fx-text-fill: #000000 !important;
+}
+
+.gray-background-blackT{
+    -fx-background-color: #E3E3E3;
+    -fx-text-fill: #000000;
+}
+
+/*/// TEXTCOLORS///*/
+
+.blue-title{
+    -fx-font-size: 40pt;
+    -fx-text-fill: #1F2096;
+}
+
+.white-title{
+    -fx-font-size: 50pt;
+    -fx-text-fill: #FFFFFF;
+}
+
+.gray-title{
+    -fx-font-size: 50pt;
+    -fx-text-fill: #717375;
+}
+
+.white-title-blue-drop{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 80pt;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-height: 30;
+    -fx-effect: dropshadow(gaussian, #1F2096, 1, 0.5, 1, 1);
+}
+
+.header{
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif !important;
+    -fx-font-size: 40pt;
+    -fx-text-fill: #1F2096;
+}
+
+.subheader{
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif !important;
+    -fx-font-size: 30pt;
+    -fx-text-fill: #1F2096;
+}
+
+.body{
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif !important;
+    -fx-font-size: 15pt;
+    -fx-text-fill: #000000;
+}
+
+.red-bold-text{
+    -fx-text-fill: #e53935;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif !important;
+}
+
+.text-notification{
+    -fx-text-fill: #717375;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif !important;
+    -fx-font-size: 30px;
+}
+
+.navigation-label {
+    -fx-background-color: #1F2096;
+    -fx-background-radius: 0;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24;
+    -fx-alignment: CENTER;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+}
+
+.jfx-text-field{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: #717375;
+    -fx-background-color: #FFFFFF;
+    -jfx-focused-color: #1F2096;
+    -jfx-unfocused-color: #2E2E30;
+}
+
+.check-box{
+    -jfx-checked-color: #1F2096;
+    -jfx-unchecked-color: #2E2E30;
+}
+
+.jfx-combo-box{
+    -fx-background-color: #FFFFFF;
+    -jfx-focused-color: #1F2096;
+    -jfx-unfocused-color: #717375;
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+.jfx-list-cell-nav {
+    -fx-pref-height: 150;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15;
+    -fx-border-color:  #F0F0F0;
+}
+
+.jfx-list-cell:filled:hover {
+    -fx-background-color: #E3E3E3;
+    -fx-text-fill: #1F2096;
+}
+.jfx-list-cell:filled:selected {
+    -fx-background-color: #1F2096;
+    -fx-text-fill: white;
+}
+
+.list-view-box:hover .label {
+    -fx-background-color: #E3E3E3;
+    -fx-text-fill: #717375;
+}
+
+.list-view-box:selected .label {
+    -fx-background-color: #1F2096;
+    -fx-text-fill: white;
+}
+
+/*////////////////////////////////////////*/
+
+.jfx-toggle-node {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 20;
+    -fx-text-fill: #1F2096;
+    -fx-background-color: white;
+    -jfx-toggle-color: #DDDC58;
+}
+
+.jfx-settings-toggle-node {
+    -fx-background-color:  #2E2E30;
+    -jfx-toggle-color: #E3E3E3;
+    -fx-background-radius: 0;
+}
+
+/*/////////////COMMON RECTANGLES AND CARDS//////////////////////////////*/
+
+.background-pop-up{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+.background-card{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+.background-cart{
+    -fx-background-color: #1F2096;
+}
+
+.jfx-text-area{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: #717375;
+    -fx-background-color: #FFFFFF;
+    -jfx-focused-color: #1F2096;
+    -jfx-unfocused-color: #2E2E30;
+}
+
+.background-banner{
+    -fx-background-color: #1F2096;
+}
+
+.stroke{
+    -fx-stroke: #1F2096;
+}
+
+.jfx-text-field-nav {
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+    -fx-max-width: 315;
+    -fx-max-height: 35;
+    -fx-focus-color: #DDDC58;
+}
+
+.jfx-hamburger StackPane {
+    -fx-background-color: white;
+    -fx-pref-height: 5;
+    -fx-pref-width: 40;
+}
+.chart {
+    -fx-text-fill: white;
+}
+.chart-plot-background {
+    -fx-background-color: white;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #717375;
+}

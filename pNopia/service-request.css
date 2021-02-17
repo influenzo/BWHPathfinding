@@ -1,0 +1,80 @@
+.vbox-information-panel {
+    -fx-padding: 20 15 20 30;
+}
+
+.text-option {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 16pt;
+}
+
+.text-option2 {
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 13pt;
+    -fx-background-color: #1F2096;
+}
+
+.text-header {
+    -fx-font-family: "Segoe UI Bold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 25pt;
+    -fx-fill: #1F2096;
+    -fx-text-fill: #1F2096;
+    -fx-translate-x: -10;
+}
+
+.transparent-highlight-button {
+    -fx-padding: 5 10 5 10;
+    -fx-pref-height: 30;
+    -fx-pref-width: 200;
+    -fx-text-alignment: LEFT;
+}
+
+.transparent-highlight-button:hover {
+    -fx-background-color: #E3E3E3;
+}
+
+.transparent-highlight-button:focused {
+    -fx-background-color: #1F2096;
+    -fx-text-fill: #fff;
+}
+
+.no-highlight-button {
+    -fx-padding: 5 10 5 10;
+    -fx-pref-height: 30;
+    -fx-pref-width: 200;
+    -fx-text-alignment: LEFT;
+}
+
+.no-highlight-button:hover {
+    -fx-background-color: #E3E3E3;
+}
+
+.no-highlight-button:focused {
+    -fx-background-color: #fff;
+}
+
+.text-title {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 40pt;
+    -fx-fill: #1F2096;
+}
+
+.text-subtitle {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 25pt;
+    -fx-fill: #1F2096;
+}
+
+.jfx-check-box {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15 !important;
+    -fx-text-fill: #1F2096;
+}
+
+.jfx-date-picker{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: #717375;
+    -fx-background-color: #FFFFFF;
+    -jfx-focus-color: #1F2096;
+    -jfx-unfocused-color: #2E2E30;
+}

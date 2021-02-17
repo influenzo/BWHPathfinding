@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.AdminLoginController">
+   <children>
+      <ImageView fx:id="dmbackImg" fitHeight="720.0" fitWidth="1280.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/static/backgrounds/thisoneissofuckingcool.jpg" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.16" specularConstant="0.8">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="backImg" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/static/backgrounds/adminLogin.jpg" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.16" specularConstant="0.8">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+
+                  </Lighting>
+         </effect>
+      </ImageView>
+      <HBox fx:id="logInBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fx:id="darkRect" arcHeight="30.0" arcWidth="30.0" fill="#212121" height="389.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="395.0" />
+                  <Rectangle fx:id="lightRect" arcHeight="30.0" arcWidth="30.0" fill="#f2f2f2" height="389.0" stroke="TRANSPARENT" strokeType="INSIDE" width="395.0" />
+                  <VBox alignment="CENTER" prefHeight="450.0" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label text="Sign In">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="20.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="header" />
+                           </styleClass>
+                        </Label>
+                        <JFXTextField fx:id="userField" prefHeight="11.0" prefWidth="314.0" promptText="Username" unFocusColor="#4d4d4d00">
+                           <font>
+                              <Font name="Segoe UI" size="35.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#00000080" />
+                           </effect>
+                           <styleClass>
+                              <String fx:value="jfx-search-text-field" />
+                              <String fx:value="white-background-blackT" />
+                           </styleClass>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="passField" prefHeight="18.0" prefWidth="320.0" promptText="Password" unFocusColor="#4d4d4d00">
+                           <font>
+                              <Font name="Segoe UI" size="35.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#0000007f" />
+                           </effect>
+                           <styleClass>
+                              <String fx:value="jfx-search-text-field" />
+                              <String fx:value="white-background-blackT" />
+                           </styleClass>
+                        </JFXPasswordField>
+                        <Label fx:id="forgotBtn" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#labelClicked" prefHeight="40.0" prefWidth="228.0" styleClass="body" text="Forgot Password" underline="true">
+                           <font>
+                              <Font name="Segoe UI" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="invalidInput" visible="false">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="label" />
+                              <String fx:value="red-bold-text" />
+                           </styleClass>
+                        </Label>
+                        <JFXButton fx:id="loginBtn" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnClicked" prefHeight="50.0" prefWidth="431.0" text="Login" textAlignment="CENTER">
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <styleClass>
+                              <String fx:value="basic-button" />
+                              <String fx:value="blue-background-whiteT" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="150.0" left="300.0" right="300.0" top="50.0" />
+         </padding>
+<!--         <stylesheets>-->
+<!--            <URL value="@pNopia/pNopia.css" />-->
+<!--            <URL value="@light-mode/basicStructure.css" />-->
+<!--         </stylesheets>-->
+      </HBox>
+      <StackPane fx:id="stackPaneBox" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #212121ae;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+         <children>
+            <HBox fx:id="emailBox" alignment="CENTER" prefHeight="100.0" prefWidth="0.0" visible="false">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle fx:id="lightForgotRect" arcHeight="30.0" arcWidth="30.0" fill="#f0f0f0" height="273.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="396.0" />
+                        <Rectangle fx:id="darkForgotRect" arcHeight="30.0" arcWidth="30.0" fill="#212121" height="273.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="396.0" />
+                        <VBox alignment="CENTER" prefHeight="519.0" prefWidth="417.0" spacing="10.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="76.0" prefWidth="376.0" text="Confirm Email" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="25.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="label" />
+                                    <String fx:value="header" />
+                                 </styleClass>
+                              </Label>
+                              <JFXTextField fx:id="emailInput" prefHeight="67.0" prefWidth="446.0" promptText="example@bwh.org" unFocusColor="TRANSPARENT">
+                                 <font>
+                                    <Font name="Segoe UI" size="35.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="jfx-search-text-field" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXTextField>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                 <children>
+                                    <JFXButton fx:id="cancelBtn" buttonType="RAISED" onAction="#btnClicked" text="Cancel">
+                                       <styleClass>
+                                          <String fx:value="basic-button" />
+                                          <String fx:value="white-background-blackT" />
+                                       </styleClass></JFXButton>
+                                    <JFXButton fx:id="confirmBtn" buttonType="RAISED" onAction="#btnClicked" text="Confirm">
+                                       <styleClass>
+                                          <String fx:value="basic-button" />
+                                          <String fx:value="blue-background-whiteT" />
+                                       </styleClass></JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="150.0" left="300.0" right="300.0" top="50.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="confirmBox" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="0.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle fx:id="lightConfirm" arcHeight="30.0" arcWidth="30.0" fill="#f0f0f0de" height="235.0" stroke="TRANSPARENT" strokeType="INSIDE" width="392.0" />
+                        <Rectangle fx:id="darkConfirm" arcHeight="30.0" arcWidth="30.0" fill="#212121" height="235.0" stroke="TRANSPARENT" strokeType="INSIDE" width="392.0" />
+                        <VBox alignment="CENTER" prefHeight="519.0" prefWidth="335.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <ImageView fitHeight="68.0" fitWidth="72.0">
+                                 <image>
+                                    <Image url="@images/icons/emailSent_black_light.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="115.0" prefWidth="332.0" styleClass="text-notification" text="Password recovery email sent" textAlignment="CENTER" textFill="#4d4d4d" wrapText="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="150.0" left="300.0" right="300.0" top="50.0" />
+               </padding>
+            </HBox>
+         </children>
+         <!--         <stylesheets>-->
+         <!--            <URL value="@pNopia/pNopia.css" />-->
+         <!--            <URL value="@light-mode/basicStructure.css" />-->
+         <!--         </stylesheets>-->
+      </StackPane>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" focusTraversable="false" layoutX="72.0" layoutY="46.0" onAction="#btnClicked" prefHeight="50.0" prefWidth="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0">
+               <image>
+                  <Image url="@images/icons/back_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="small-icon-button" />
+            <String fx:value="blue-background-whiteT" />
+         </styleClass>
+         <!--         <stylesheets>-->
+         <!--            <URL value="@pNopia/pNopia.css" />-->
+         <!--            <URL value="@light-mode/basicStructure.css" />-->
+         <!--         </stylesheets>-->
+      </JFXButton>
+      <fx:include source="BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>

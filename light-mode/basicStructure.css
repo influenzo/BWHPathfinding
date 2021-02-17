@@ -1,0 +1,218 @@
+.root{
+    -fx-font-family: "Segoe UI";
+}
+
+/*///////////BUTTONS///////////*/
+.basic-button{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+    -fx-pref-height: 30;
+    -fx-buttonType: "RAISED"
+}
+
+.small-icon-button{
+    /*-fx-padding: 5 10 5 10;*/
+    -fx-background-radius: 30;
+    -fx-font-size: 0pt;
+    -fx-text-fill: transparent !important;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+    -fx-content-display: center;
+    -fx-buttonType: "RAISED"
+}
+
+.medium-icon-button {
+    /*-fx-padding: 5 10 5 10;*/
+    -fx-background-radius: 30;
+    -fx-font-size: 0pt;
+    -fx-text-fill: transparent !important;
+    -fx-pref-height: 70;
+    -fx-pref-width: 70;
+    -fx-content-display: center;
+    -fx-buttonType: "RAISED"
+}
+
+.floor-button {
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 30;
+    -fx-font-size: 20pt;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+    -fx-content-display: center;
+    -fx-buttonType: "RAISED"
+}
+
+.transparent-button{
+    -fx-padding: 5 22 5 22;
+    -fx-background-color: transparent !important;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 30;
+    -fx-buttonType: "RAISED"
+}
+
+.transparent-button-white-text{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-pref-height: 50;
+}
+
+.emergency-button{
+    -fx-padding: 0 10 0 10;
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-font-family: "Yu Gothic Medium", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+    -fx-text-fill: red;
+    -fx-pref-height: 50;
+    -fx-pref-width: 228;
+}
+
+/*///////////BUTTONS END///////////*/
+
+.label{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+}
+
+.jfx-search-text-field{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+}
+
+.jfx-home-text-field{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-background-color: white;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+    -fx-prompt-text-fill: grey;
+    -fx-text-fill: black;
+    -fx-fill: black;
+}
+
+.jfx-form-text-field{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 30;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 15pt;
+    -fx-pref-width: 300;
+}
+
+.jfx-check-box {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12;
+}
+
+.jfx-combo-box{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15;
+    -fx-position: fixed;
+}
+
+/*/////////// LIST VIEW ///////////*/
+/* The increment and decrement button CSS class of scrollbar */
+
+.jfx-list-view .scroll-bar:vertical .increment-button ,
+.jfx-list-view .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.jfx-list-view  .scroll-bar .increment-arrow,
+.jfx-list-view  .scroll-bar .decrement-arrow
+{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+.jfx-list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.list-view  .scroll-bar .increment-arrow,
+.list-view  .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/*/////////// TITLED PANE ///////////*/
+
+.titled-pane
+{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 20;
+}
+.titled-pane:focused
+{
+    -fx-text-fill: white;
+}
+.titled-pane > .title {
+    -fx-pref-height: 40;
+}
+
+.titled-pane > .title > .arrow-button
+{
+    -fx-background-color: null;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.titled-pane > .title > .arrow-button .arrow
+{
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow
+{
+    -fx-rotate: -90;
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow
+{
+    -fx-background-color: white;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button ,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.scroll-pane  .scroll-bar .increment-arrow,
+.scroll-pane  .scroll-bar .decrement-arrow
+{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}

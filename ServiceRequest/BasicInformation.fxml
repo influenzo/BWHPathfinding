@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="523.0" prefWidth="343.0" spacing="25.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.ServiceRequest.BasicInformationController">
+   <children>
+      <StackPane prefHeight="534.0" prefWidth="343.0">
+         <children>
+            <VBox fx:id="primaryBox" prefHeight="523.0" prefWidth="343.0" spacing="25.0" styleClass="vbox-information-panel" visible="false">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="Service Request Form ">
+                     <font>
+                        <Font name="Segoe UI Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="requester" labelFloat="true" prefHeight="38.0" prefWidth="326.0" promptText="Full Name" styleClass="jfx-text-field">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="description" labelFloat="true" prefHeight="127.0" prefWidth="343.0" promptText="Description of Request" styleClass="jfx-text-area">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body" text="Location" >
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="nodeList" prefHeight="186.0" prefWidth="313.0" styleClass="list-cell">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox fx:id="secondaryBox" prefHeight="523.0" prefWidth="343.0" spacing="25.0" styleClass="vbox-information-panel">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="Service Request Form ">
+                     <font>
+                        <Font name="Segoe UI Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="requester1" labelFloat="true" prefHeight="38.0" prefWidth="326.0" promptText="Full Name" styleClass="jfx-text-field">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body" text="Location">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="nodeList1" prefHeight="186.0" prefWidth="313.0" styleClass="list-cell">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+<!--   <stylesheets>-->
+<!--      <URL value="@../light-mode/light-mode.css" />-->
+<!--      <URL value="@../light-mode/service-request.css" />-->
+<!--   </stylesheets>-->
+<!--   <stylesheets>-->
+<!--      <URL value="@../pNopia/pNopia.css" />-->
+<!--      <URL value="@../pNopia/service-request.css" />-->
+<!--   </stylesheets>-->
+</VBox>

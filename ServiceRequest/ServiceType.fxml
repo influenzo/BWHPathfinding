@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.ServiceRequest.ServiceTypeController">
+  <children>
+      <JFXButton fx:id="emergency" buttonType="RAISED" focusTraversable="false" layoutX="22.0" layoutY="10.0" onAction="#btnClicked" prefHeight="51.0" prefWidth="226.0" text="EMERGENCY" textFill="RED" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Yu Gothic Medium" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/emergency_phone_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="emergency-button" />
+            <String fx:value="red-bold-text" />
+         </styleClass>
+      </JFXButton>
+     <VBox fx:id="buttonsDark" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+           <HBox alignment="CENTER" prefHeight="412.0" prefWidth="1280.0">
+              <children>
+                 <HBox alignment="CENTER" prefHeight="469.0" prefWidth="1280.0" spacing="60.0">
+                    <opaqueInsets>
+                       <Insets />
+                    </opaqueInsets>
+                    <padding>
+                       <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+                    <children>
+                       <VBox alignment="TOP_CENTER" prefHeight="392.0" prefWidth="195.0" spacing="20.0">
+                          <children>
+                             <JFXButton fx:id="btnAudioVisual1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/baseline_volume_up_black_48dp.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Audio-Visual Services">
+                                <VBox.margin>
+                                   <Insets />
+                                </VBox.margin>
+                             </Text>
+                             <JFXButton fx:id="btnInternalTrans1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/wheelchair_black_light.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets top="50.0" />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Internal Transportation" textAlignment="CENTER" wrappingWidth="242.21810913085938" />
+                          </children>
+                       </VBox>
+                       <VBox alignment="TOP_CENTER" prefHeight="392.0" prefWidth="195.0" spacing="20.0">
+                          <children>
+                             <JFXButton fx:id="btnBirthday1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text="  " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/bcake_white.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                                <VBox.margin>
+                                   <Insets />
+                                </VBox.margin>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Birthday Party" />
+                             <JFXButton fx:id="btnInterpreter1" buttonType="RAISED" maxWidth="130.0" minWidth="130.0" onAction="#btnClicked" prefHeight="50.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/baseline_translate_black_48dp.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets top="50.0" />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Language Interpreter" />
+                          </children>
+                          <HBox.margin>
+                             <Insets />
+                          </HBox.margin>
+                       </VBox>
+                       <VBox alignment="TOP_CENTER" prefHeight="392.0" prefWidth="195.0" spacing="20.0">
+                          <children>
+                             <JFXButton fx:id="btnGiftShop1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/thicc-candy-bar_black.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Candy Store" />
+                             <JFXButton fx:id="btnMedicine1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/medicalHelp_black_light.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets top="50.0" />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Medicine Delivery">
+                                <VBox.margin>
+                                   <Insets />
+                                </VBox.margin>
+                             </Text>
+                          </children>
+                       </VBox>
+                       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="195.0" spacing="20.0">
+                          <children>
+                             <JFXButton fx:id="btnFlorist1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/baseline_local_florist_black_48dp.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Florist Delivery " textAlignment="CENTER" />
+                             <JFXButton fx:id="btnReligious1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/prayer_hands_black.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets top="50.0" />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Religious Services" />
+                          </children>
+                       </VBox>
+                       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="195.0" spacing="20.0">
+                          <children>
+                             <JFXButton fx:id="btnInfoTech1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/baseline_devices_black_48dp.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Information Technology" />
+                             <JFXButton fx:id="btnSanitation1" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text="  " textOverrun="CLIP">
+                                <graphic>
+                                   <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                         <Image url="@../images/icons/darkMode/sanitation_icon.png" />
+                                      </image>
+                                   </ImageView>
+                                </graphic>
+                                <VBox.margin>
+                                   <Insets top="50.0" />
+                                </VBox.margin>
+                                <styleClass>
+                                   <String fx:value="small-icon-button" />
+                                   <String fx:value="white-background-blackT" />
+                                </styleClass>
+                             </JFXButton>
+                             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Sanitation Services" />
+                          </children>
+                       </VBox>
+                    </children>
+                 </HBox>
+              </children>
+           </HBox>
+        </children>
+     </VBox>
+      <VBox fx:id="buttonsLight" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="412.0" prefWidth="1280.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="469.0" prefWidth="1280.0" spacing="60.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="392.0" prefWidth="195.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="btnAudioVisual" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/baseline_volume_up_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Audio-Visual Services">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXButton fx:id="btnInternalTrans" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/wheelchair_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Internal Transportation" textAlignment="CENTER" wrappingWidth="242.21810913085938" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="392.0" prefWidth="195.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="btnBirthday" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text="  " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/bcake_blue.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Birthday Party" />
+                              <JFXButton fx:id="btnInterpreter" buttonType="RAISED" maxWidth="130.0" minWidth="130.0" onAction="#btnClicked" prefHeight="50.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/baseline_translate_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Language Interpreter" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="392.0" prefWidth="195.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="btnGiftShop" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/thicc-candy-bar_blue.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Candy Store" />
+                              <JFXButton fx:id="btnMedicine" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/round_local_pharmacy_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Medicine Delivery">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="195.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="btnFlorist" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/baseline_local_florist_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Florist Delivery " textAlignment="CENTER" />
+                              <JFXButton fx:id="btnReligious" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/prayer_hands_blue.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Religious Services" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="195.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="btnInfoTech" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text=" " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/baseline_devices_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Information Technology" />
+                              <JFXButton fx:id="btnSanitation" buttonType="RAISED" maxHeight="75.0" maxWidth="130.0" minHeight="75.0" minWidth="130.0" onAction="#btnClicked" prefHeight="75.0" prefWidth="130.0" text="  " textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fitHeight="64.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/sanitation_icon_blue_light.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="small-icon-button" />
+                                    <String fx:value="white-background-blackT" />
+                                 </styleClass>
+                              </JFXButton>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-option2" text="Sanitation Services" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blue-title" text="How can we help?" />
+         </children>
+      </HBox>
+      <JFXButton fx:id="btnHome" buttonType="RAISED" onAction="#btnClicked" text="Home" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0">
+               <image>
+                  <Image url="@../images/icons/home_white_light.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="small-icon-button" />
+            <String fx:value="blue-background-whiteT" />
+         </styleClass></JFXButton>
+  <fx:include source="../BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+  </children>
+<!--   <stylesheets>-->
+<!--      <URL value="@../light-mode/basicStructure.css" />-->
+<!--      <URL value="@../pNopia/pNopia.css" />-->
+<!--   </stylesheets>-->
+</AnchorPane>

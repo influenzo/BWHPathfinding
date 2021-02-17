@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamp.Controllers.ServiceRequest.BirthdayController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="520.0" prefWidth="1129.0">
+                    <children>
+                        <HBox prefHeight="495.0" prefWidth="1174.0" spacing="75.0" styleClass="background-card">
+                            <children>
+                                <fx:include fx:id="basicInformation" source="BasicInformation.fxml" />
+                                <VBox prefHeight="474.0" prefWidth="338.0" spacing="15.0" styleClass="vbox-information-panel">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="Details">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Segoe UI Bold" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <JFXTextField fx:id="numPeople" labelFloat="true" promptText="Number of People" />
+                                 </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <JFXDatePicker fx:id="deliveryDate" promptText="Date" />
+                                 </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cake Type" styleClass="body" />
+                                 </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxIceCream" onAction="#btnClicked" text="Ice Cream" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxVanilla" onAction="#btnClicked" text="Vanilla" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxChocolate" onAction="#btnClicked" text="Chocolate" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balloon Color" styleClass="body"/>
+                                 </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxRed" onAction="#btnClicked" text="Red" />
+                                          <JFXCheckBox fx:id="boxBlue" onAction="#btnClicked" text="Blue" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxYellow" onAction="#btnClicked" text="Yellow" />
+                                          <JFXCheckBox fx:id="boxGreen" onAction="#btnClicked" text="Green" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxPurple" onAction="#btnClicked" text="Purple" />
+                                          <JFXCheckBox fx:id="boxPink" onAction="#btnClicked" text="Pink" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                        </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Theme" styleClass="body"/>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="346.0" spacing="10.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" >
+                                       <children>
+                                          <JFXCheckBox fx:id="boxSuperHero" onAction="#btnClicked" text="Superhero" />
+                                          <JFXCheckBox fx:id="boxPrincess" onAction="#btnClicked" text="Princess" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxRickMorty" onAction="#btnClicked" text="Rick &amp; Morty" />
+                                          <JFXCheckBox fx:id="boxSports" onAction="#btnClicked" text="Sports" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="boxCars" onAction="#btnClicked" text="Cars" />
+                                          <JFXCheckBox fx:id="boxTransformers" onAction="#btnClicked" text="Transformers" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="BOTTOM_CENTER" prefHeight="475.0" prefWidth="230.0" styleClass="vbox-information-panel">
+                                    <children>
+                                        <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="230.0" styleClass="red-bold-text" text="Please fill out all fields" textAlignment="CENTER" wrapText="true">
+                                            <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Segoe UI" size="17.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXButton fx:id="btnSubmit" buttonType="RAISED" onAction="#btnClicked" prefHeight="49.0" prefWidth="147.0" text="Submit">
+                                            <VBox.margin>
+                                                <Insets right="10.0" />
+                                            </VBox.margin>
+                                            <styleClass>
+                                                <String fx:value="basic-button" />
+                                                <String fx:value="blue-background-whiteT" />
+                                            </styleClass></JFXButton>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="20.0" />
+                                    </padding>
+                                    <HBox.margin>
+                                        <Insets left="-50.0" right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" color="#949494" height="20.0" radius="9.5" width="20.0" />
+                            </effect>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="135.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Text styleClass="text-title" text="Birthday Party" />
+            </children>
+            <padding>
+                <Insets />
+            </padding>
+        </HBox>
+        <fx:include fx:id="requestReceivedPopup" source="RequestReceivedPopup.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <fx:include source="../BottomBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <JFXButton fx:id="btnCancel" buttonType="RAISED" onAction="#btnClicked" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <styleClass>
+                <String fx:value="small-icon-button" />
+                <String fx:value="blue-background-whiteT" />
+            </styleClass>
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="40.0">
+                    <image>
+                        <Image url="@../images/icons/back_white_light.png" />
+                    </image>
+                </ImageView>
+            </graphic></JFXButton>
+    </children>
+    <!--   <stylesheets>-->
+    <!--      <URL value="@../light-mode/basicStructure.css" />-->
+    <!--      <URL value="@../pNopia/pNopia.css" />-->
+    <!--      <URL value="@../light-mode/service-request.css" />-->
+    <!--   </stylesheets>-->
+</AnchorPane>
